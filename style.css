@@ -9,24 +9,66 @@
     
 }
 .navbar{
-    background-color: #c1c1c1;
+    background-color: #c1c1c183;
     width: 100%;
     height: 60px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
 }
 .navbar .logo a{
     font-size: 30px;
+    color: orange;
+
+    
+}
+.navbar .logo{
+    /* مثل مارجین یا پدینگ کار میکنه فقط به دگه دیو ها کاری نداره */
+    transform: translateX(25px);   
 }
 .navbar a{
     text-decoration: none;
 }
 .links li{
     list-style-type: none;
+   
+    
+}
+.links li  a{
+   color: black;
+   font-weight: 700;
 }
 .navbar .links{
     display: flex;
     gap: 2rem;
+}
+
+@media (max-width:569px) {
+        .navbar{
+            flex-direction: column;
+            gap: 20px;
+            height: 100px;
+            background-color: rgba(240, 131, 216, 0.452);
+            
+        }
+        .navbar .logo{
+            transform: translateX(0);
+            margin-top: 5px;
+           
+        }
+        .navbar .logo a{
+            color: black;
+            font-family: Colonna MT;
+        }
+    
+}
+
+@media (max-width:348px) {
+    .links li  a{
+        font-size: 14px;
+    }
+
+    
 }
