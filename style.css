@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navigation{
+    position: relative;
+    
+}
+.navbar{
+    background-color: #c1c1c1;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 30px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.links li{
+    list-style-type: none;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
