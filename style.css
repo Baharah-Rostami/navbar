@@ -4,28 +4,28 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navigation{
     position: relative;
     
 }
 .navbar{
-    background-color: #c1c1c183;
+    background-color: #c1c1c1;
     width: 100%;
     height: 60px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.199);
 }
 .navbar .logo a{
     font-size: 30px;
-    color: orange;
-
-    
+    color: #d36ca3;
 }
 .navbar .logo{
-    /* مثل مارجین یا پدینگ کار میکنه فقط به دگه دیو ها کاری نداره */
     transform: translateX(25px);   
 }
 .navbar a{
@@ -33,42 +33,107 @@
 }
 .links li{
     list-style-type: none;
-   
-    
 }
 .links li  a{
    color: black;
    font-weight: 700;
+   text-align: center;
 }
 .navbar .links{
     display: flex;
     gap: 2rem;
+    padding-right: 30%;
 }
 
-@media (max-width:569px) {
+@media (max-width:560px) {
         .navbar{
             flex-direction: column;
+            justify-content: center;
             gap: 20px;
             height: 100px;
-            background-color: rgba(240, 131, 216, 0.452);
-            
-        }
-        .navbar .logo{
-            transform: translateX(0);
-            margin-top: 5px;
-           
+            background-color: #c1c1c1;
         }
         .navbar .logo a{
-            color: black;
-            font-family: Colonna MT;
+            font-size: 40px;
+            text-align: center;
+            transform: translateX(0)
+            translateY(10px);
         }
-    
-}
+        .navbar .links{
 
-@media (max-width:348px) {
-    .links li  a{
-        font-size: 14px;
+            align-items: center;
+            gap: 1rem;
+        }
+}
+.header{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to left, #ffc0cb, #e274af, #ffc0cb,  #e274af);
+    justify-content: space-around;
+}
+.header-data{
+   transform: translatey(65px);
+}
+.header-data h1{
+    font-size: 41px;
+    padding-left: 19px;
+    color: #fffefe;
+}
+.header-data p{
+    font-size: 20px;
+  transform: translatey(50px)
+  translateX(50px);
+  color: #fffefe;
+}
+.header-img{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 30%;
+}
+.header-img img{
+    width: 30%;
+    height: 200px;
+    border-radius: 50%;
+
+}
+@media (max-width:404px){
+    .header{
+        flex-direction: column;
     }
-
-    
+    .header-data p{
+        transform: translateY(20px);
+    }
+    .header-img{
+        transform: translateY(60px);
+    }
 }
+.main{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(248, 237, 223);
+}
+.main h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+table{
+    margin-top: 40px;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+ td{
+    border: 1px solid deeppink;
+    padding: 14px;
+   }
+   tr:nth-child(even){
+    background-color: pink;
+   }
+   tr:hover{
+    background-color: lightgoldenrodyellow ;
+   }
+   th{
+    background-color: rgb(243, 106, 179);
+   }
